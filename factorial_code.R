@@ -21,10 +21,16 @@ factorial_loop <- function(n){
 library(purrr)
 
 factorial_reduce <- function(n){
-  reduce(c(1:n), function(x, y){
-  x*y
-})
+  if(n==0){
+    1
+  }else{
+    reduce(c(1:n), function(x, y){
+    x*y
+    })
+  }
 }
+
+factorial_reduce(0)
 
 
 # Factorial_func: a version that uses recursion to compute the factorial.

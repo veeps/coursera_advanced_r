@@ -41,11 +41,11 @@ setGeneric("subject", function(x,n){
 setMethod("subject",
           c(x = "LongitudinalData"),
           function(x, n){
-           x[x$id == n]
+           x[x$id == n,]
           })
 
 data_14 <- data_oop[data_oop$id == 14 ]
-
+typeof(factor)
 out <- subject(data_oop, 14) %>% summary
 print(out)
 
@@ -59,7 +59,7 @@ setGeneric("subject", function(x){
 setMethod("subject",
           c(x = "LongitudinalData"),
           function(x, n){
-            filter(x$id)
+            filter(x$id, )
           })
 
 
@@ -69,6 +69,13 @@ id_54 <- data %>%
   summary
 
 
+
+test_list <- list(x = (1:10), y=(1:10), c =("money"))
+test_list$x
+
+test_list_df[test_list_df$x==1, ]
+
+test_list_df <- as.data.frame(test_list)
 
 
 

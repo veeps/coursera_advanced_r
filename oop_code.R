@@ -12,25 +12,35 @@
 library(readr)
 library(magrittr)
 library(dplyr)
+library(sloop)
 data <- read_csv("data/MIE.csv")
-class(data)
-unique(data$id)
+
 
 
 # You will need to design a class called “LongitudinalData” that characterizes the structure of this longitudinal dataset. 
 # make_LD: a function that converts a data frame into a “LongitudinalData” object
 
-make_LD <- function(x) {
-  if (is.numeric(x)) stop("X must be a data frame")
-  structure(list(
-    id = x$id,
-    visit = x$visit,
-    room = x$room,
-    value = x$value,
-    timepoint = x$timepoint), class = "LongitudinalData")
+# make_LD <- function(x) {
+#   if (is.numeric(x)) stop("X must be a data frame")
+#   structure(list(
+#     id = x$id,
+#     visit = x$visit,
+#     room = x$room,
+#     value = x$value,
+#     timepoint = x$timepoint,stringsAsFactors = FALSE), class = "LongitudinalData")
+# }
+
+make_LD2 <- function(x) {
+  if (!is.data.frame(x)) stop("X must be a data frame")
+  structure(x, class = c("LongitudinalData", "data.frame"))
 }
 
-data_oop <- make_LD(data)
+
+
+
+s3_get_method(data.frame)
+UseMethod(data.frame)
+data_oop <- make_LD2(data)
 class(data_oop)
 
 # subject: a generic function for extracting subject-specific information
@@ -41,26 +51,31 @@ setGeneric("subject", function(x,n){
 setMethod("subject",
           c(x = "LongitudinalData"),
           function(x, n){
-           x[x$id == n,]
+            if ( n %in% x$id){
+            x[x$id == n, ]
+            } else {
+              print("Subject not in data")
+            }
           })
 
-data_14 <- data_oop[data_oop$id == 14 ]
-typeof(factor)
-out <- subject(data_oop, 14) %>% summary
+# data_14 <- data_oop[data_oop$id == 14, ] %>% summary
+out <- subject(data_oop, 10) %>% summary
 print(out)
+attributes(data_)
 
 id_14_data_oop <- data_oop[data_oop$id == 14,]
 
 # visit: a generic function for extracting visit-specific information
-setGeneric("subject", function(x){
-  standardGeneric("subject")
-})
+# setGeneric("subject", function(x){
+#   standardGeneric("subject")
+# })
+# 
+# setMethod("subject",
+#           c(x = "LongitudinalData"),
+#           function(x, n){
+#             filter(x$id, )
+#           })
 
-setMethod("subject",
-          c(x = "LongitudinalData"),
-          function(x, n){
-            filter(x$id, )
-          })
 
 
 

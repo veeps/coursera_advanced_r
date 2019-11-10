@@ -12,7 +12,6 @@
 library(readr)
 library(magrittr)
 library(dplyr)
-library(sloop)
 data <- read_csv("data/MIE.csv")
 
 
@@ -30,17 +29,14 @@ data <- read_csv("data/MIE.csv")
 #     timepoint = x$timepoint,stringsAsFactors = FALSE), class = "LongitudinalData")
 # }
 
-make_LD2 <- function(x) {
+make_LD <- function(x) {
   if (!is.data.frame(x)) stop("X must be a data frame")
   structure(x, class = c("LongitudinalData", "data.frame"))
 }
 
 
 
-
-s3_get_method(data.frame)
-UseMethod(data.frame)
-data_oop <- make_LD2(data)
+data_oop <- make_LD(data)
 class(data_oop)
 
 # subject: a generic function for extracting subject-specific information
@@ -58,39 +54,37 @@ setMethod("subject",
             }
           })
 
-# data_14 <- data_oop[data_oop$id == 14, ] %>% summary
-out <- subject(data_oop, 10) %>% summary
-print(out)
-attributes(data_)
-
-id_14_data_oop <- data_oop[data_oop$id == 14,]
 
 # visit: a generic function for extracting visit-specific information
-# setGeneric("subject", function(x){
-#   standardGeneric("subject")
-# })
-# 
-# setMethod("subject",
-#           c(x = "LongitudinalData"),
-#           function(x, n){
-#             filter(x$id, )
-#           })
+setGeneric("visit", function(x,n){
+  standardGeneric("visit")
+})
+
+setMethod("visit",
+          c(x = "LongitudinalData"),
+          function(x, n){
+            if ( n %in% x$visit){
+              x[x$visit == n, ]
+            } else {
+              print("Visit number does not exist")
+            }
+          })
 
 
+# room: a generic function for extracting room-specific information
+setGeneric("room", function(x,n){
+  standardGeneric("room")
+})
 
-
-id_54 <- data %>%
-  filter(id == 54) %>%
-  summary
-
-
-
-test_list <- list(x = (1:10), y=(1:10), c =("money"))
-test_list$x
-
-test_list_df[test_list_df$x==1, ]
-
-test_list_df <- as.data.frame(test_list)
+setMethod("room",
+          c(x = "LongitudinalData"),
+          function(x, n){
+            if ( n %in% x$room){
+              x[x$room == n, ]
+            } else {
+              print("Room does not exist")
+            }
+          })
 
 
 

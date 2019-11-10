@@ -1,8 +1,3 @@
-# n * (n-1) * (n - 2) * … * 1
-
-
-
-
 # Factorial_loop: a version that computes the factorial of an integer using looping (such as a for loop)
 Factorial_loop <- function(n){
   if (n ==0){
@@ -30,7 +25,6 @@ Factorial_reduce <- function(n){
   }
 }
 
-Factorial_reduce(0)
 
 # Factorial_func: a version that uses recursion to compute the factorial.
 Factorial_func <- function(x){
@@ -41,9 +35,10 @@ Factorial_func <- function(x){
   }
 }
 
-Factorial_func(5)
 
 # Factorial_mem: a version that uses memoization to compute the factorial.
+Factorial_tbl <- c(1, rep(NA))
+
 Factorial_mem <- function(n){
   stopifnot(n > 0)
   
@@ -55,5 +50,13 @@ Factorial_mem <- function(n){
   }
 }
 
-Factorial_mem(10)
-Factorial_func(10)
+
+# Compare these different functions
+library(microbenchmark)
+check_factorial <- microbenchmark(Factorial_loop(100),
+                              Factorial_reduce(100),
+                              Factorial_func(100),
+                              Factorial_mem(100))
+record_temp_perf_2 <- microbenchmark(find_records_1(chicagoNMMAPS, 27), 
+                                     find_records_2(chicagoNMMAPS, 27))
+record_temp_perf_2

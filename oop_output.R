@@ -3,6 +3,8 @@
 library(readr)
 library(magrittr)
 source("oop_code.R")
+
+sink("oop_output.txt")
 ## Load any other packages that you may need to execute your code
 
 data <- read_csv("data/MIE.csv")
@@ -33,3 +35,5 @@ print(out)
 
 out <- subject(x, 44) %>% visit(1) %>% room("living room") %>% summary
 print(out)
+
+sink()

@@ -1,0 +1,663 @@
+Summary of performance for each factorial function 
+ 
+              expr min   lq  mean median   uq  max neval
+1   Factorial_loop  41 43.0 55.66     45 48.0  685   100
+2 Factorial_reduce  45 61.0 78.30     64 67.0  861   100
+3   Factorial_func  43 45.5 74.27     48 50.0 1495   100
+4    Factorial_mem  47 50.0 63.74     53 56.5  647   100
+   14     0 bedroom  6.00        60
+9   14     0 bedroom  2.75        61
+10  14     0 bedroom  2.75        62
+11  14     0 bedroom  2.75        63
+12  14     0 bedroom  2.75        64
+13  14     0 bedroom  2.75        65
+14  14     0 bedroom  2.75        66
+15  14     0 bedroom  2.75        67
+16  14     0 bedroom  2.75        68
+17  14     0 bedroom  2.75        69
+18  14     0 bedroom  2.75        70
+19  14     0 bedroom  2.75        71
+20  14     0 bedroom  2.75        72
+21  14     0 bedroom  6.00        73
+22  14     0 bedroom  2.75        74
+23  14     0 bedroom  2.75        75
+24  14     0 bedroom  2.75        76
+25  14     0 bedroom  6.00        77
+26  14     0 bedroom  2.75        78
+27  14     0 bedroom  2.75        79
+28  14     0 bedroom  2.75        80
+29  14     0 bedroom  2.75        81
+30  14     0 bedroom  2.75        82
+31  14     0 bedroom  6.00        83
+32  14     0 bedroom  2.75        84
+33  14     0 bedroom  2.75        85
+34  14     0 bedroom  2.75        86
+35  14     0 bedroom  2.75        87
+36  14     0 bedroom  6.00        88
+37  14     0 bedroom  2.75        89
+38  14     0 bedroom  2.75        90
+39  14     0 bedroom  2.75        91
+40  14     0 bedroom  2.75        92
+41  14     0 bedroom  2.75        93
+42  14     0 bedroom  2.75        94
+43  14     0 bedroom  6.00        95
+44  14     0 bedroom  2.75        96
+45  14     0 bedroom  2.75        97
+46  14     0 bedroom  2.75        98
+47  14     0 bedroom  2.75        99
+48  14     0 bedroom  2.75       100
+49  14     0 bedroom  2.75       101
+50  14     0 bedroom  2.75       102
+51  14     0 bedroom  2.75       103
+52  14     0 bedroom  2.75       104
+53  14     0 bedroom  2.75       105
+54  14     0 bedroom  6.00       106
+55  14     0 bedroom  6.00       107
+56  14     0 bedroom  2.75       108
+57  14     0 bedroom  2.75       109
+58  14     0 bedroom  2.75       110
+59  14     0 bedroom  2.75       111
+60  14     0 bedroom  7.00       112
+61  14     0 bedroom  9.00       113
+62  14     0 bedroom  2.75       114
+63  14     0 bedroom  6.00       115
+64  14     0 bedroom  2.75       116
+65  14     0 bedroom  6.00       117
+66  14     0 bedroom  6.00       118
+67  14     0 bedroom  6.00       119
+68  14     0 bedroom  2.75       120
+69  14     0 bedroom  2.75       121
+70  14     0 bedroom  2.75       122
+71  14     0 bedroom  2.75       123
+72  14     0 bedroom  6.00       124
+73  14     0 bedroom  6.00       125
+74  14     0 bedroom  2.75       126
+75  14     0 bedroom  2.75       127
+76  14     0 bedroom  2.75       128
+77  14     0 bedroom  6.00       129
+78  14     0 bedroom  6.00       130
+79  14     0 bedroom  6.00       131
+80  14     0 bedroom  6.00       132
+81  14     0 bedroom  2.75       133
+82  14     0 bedroom  6.00       134
+83  14     0 bedroom  6.00       135
+84  14     0 bedroom  6.00       136
+85  14     0 bedroom  6.00       137
+86  14     0 bedroom  6.00       138
+87  14     0 bedroom  6.00       139
+88  14     0 bedroom  6.00       140
+89  14     0 bedroom  6.00       141
+90  14     0 bedroom  6.00       142
+91  14     0 bedroom  6.00       143
+92  14     0 bedroom  6.00       144
+93  14     0 bedroom  2.75       145
+94  14     0 bedroom  6.00       146
+95  14     0 bedroom  6.00       147
+96  14     0 bedroom  6.00       148
+97  14     0 bedroom  8.00       149
+98  14     0 bedroom  7.00       150
+99  14     0 bedroom 11.00       151
+100 14     0 bedroom  2.75       152
+101 14     0 bedroom  2.75       153
+102 14     0 bedroom  6.00       154
+103 14     0 bedroom  6.00       155
+104 14     0 bedroom  6.00       156
+105 14     0 bedroom  2.75       157
+106 14     0 bedroom  6.00       158
+107 14     0 bedroom  6.00       159
+108 14     0 bedroom  6.00       160
+109 14     0 bedroom  6.00       161
+110 14     0 bedroom  6.00       162
+111 14     0 bedroom  2.75       163
+112 14     0 bedroom  6.00       164
+113 14     0 bedroom 10.00       165
+114 14     0 bedroom  8.00       166
+115 14     0 bedroom 10.00       167
+116 14     0 bedroom  6.00       168
+117 14     0 bedroom  2.75       169
+118 14     0 bedroom  6.00       170
+119 14     0 bedroom  8.00       171
+120 14     0 bedroom  7.00       172
+121 14     0 bedroom  6.00       173
+122 14     0 bedroom  6.00       174
+123 14     0 bedroom  2.75       175
+124 14     0 bedroom  6.00       176
+125 14     0 bedroom  7.00       177
+126 14     0 bedroom  6.00       178
+127 14     0 bedroom  2.75       179
+128 14     0 bedroom  2.75       180
+129 14     0 bedroom  2.75       181
+130 14     0 bedroom  6.00       182
+131 14     0 bedroom  6.00       183
+132 14     0 bedroom 10.00       184
+133 14     0 bedroom  9.00       185
+134 14     0 bedroom  2.75       186
+135 14     0 bedroom  2.75       187
+136 14     0 bedroom  6.00       188
+137 14     0 bedroom  6.00       189
+138 14     0 bedroom  2.75       190
+139 14     0 bedroom  2.75       191
+140 14     0 bedroom  2.75       192
+141 14     0 bedroom  2.75       193
+142 14     0 bedroom  6.00       194
+143 14     0 bedroom  6.00       195
+144 14     0 bedroom  2.75       196
+145 14     0 bedroom  2.75       197
+146 14     0 bedroom  2.75       198
+147 14     0 bedroom  2.75       199
+148 14     0 bedroom  8.00       200
+149 14     0 bedroom  8.00       201
+150 14     0 bedroom 12.00       202
+151 14     0 bedroom  2.75       203
+152 14     0 bedroom  2.75       204
+153 14     0 bedroom  2.75       205
+154 14     0 bedroom  6.00       206
+155 14     0 bedroom  6.00       207
+156 14     0 bedroom  6.00       208
+157 14     0 bedroom  2.75       209
+158 14     0 bedroom  2.75       210
+159 14     0 bedroom  2.75       211
+160 14     0 bedroom  6.00       212
+161 14     0 bedroom  7.00       213
+162 14     0 bedroom  6.00       214
+163 14     0 bedroom  6.00       215
+164 14     0 bedroom  6.00       216
+165 14     0 bedroom  6.00       217
+166 14     0 bedroom  6.00       218
+167 14     0 bedroom  7.00       219
+168 14     0 bedroom  7.00       220
+169 14     0 bedroom 13.00       221
+170 14     0 bedroom 12.00       222
+171 14     0 bedroom  9.00       223
+172 14     0 bedroom 10.00       224
+173 14     0 bedroom  9.00       225
+174 14     0 bedroom  8.00       226
+175 14     0 bedroom  7.00       227
+176 14     0 bedroom  7.00       228
+177 14     0 bedroom  7.00       229
+178 14     0 bedroom  7.00       230
+179 14     0 bedroom  7.00       231
+180 14     0 bedroom  7.00       232
+181 14     0 bedroom  8.00       233
+182 14     0 bedroom  6.00       234
+183 14     0 bedroom  6.00       235
+184 14     0 bedroom  6.00       236
+185 14     0 bedroom  8.00       237
+186 14     0 bedroom  8.00       238
+187 14     0 bedroom  7.00       239
+188 14     0 bedroom  7.00       240
+189 14     0 bedroom  7.00       241
+190 14     0 bedroom  7.00       242
+191 14     0 bedroom  8.00       243
+192 14     0 bedroom  8.00       244
+193 14     0 bedroom  7.00       245
+194 14     0 bedroom  7.00       246
+195 14     0 bedroom  7.00       247
+196 14     0 bedroom  8.00       248
+197 14     0 bedroom  8.00       249
+198 14     0 bedroom  7.00       250
+199 14     0 bedroom  7.00       251
+200 14     0 bedroom  7.00       252
+ [ reached 'max' / getOption("max.print") -- omitted 120677 rows ]
+[1] "Subject not in data"
+[1] "Subject not in data"
+    id visit    room value timepoint
+1   14     0 bedroom  6.00        53
+2   14     0 bedroom  6.00        54
+3   14     0 bedroom  2.75        55
+4   14     0 bedroom  2.75        56
+5   14     0 bedroom  2.75        57
+6   14     0 bedroom  2.75        58
+7   14     0 bedroom  6.00        59
+8   14     0 bedroom  6.00        60
+9   14     0 bedroom  2.75        61
+10  14     0 bedroom  2.75        62
+11  14     0 bedroom  2.75        63
+12  14     0 bedroom  2.75        64
+13  14     0 bedroom  2.75        65
+14  14     0 bedroom  2.75        66
+15  14     0 bedroom  2.75        67
+16  14     0 bedroom  2.75        68
+17  14     0 bedroom  2.75        69
+18  14     0 bedroom  2.75        70
+19  14     0 bedroom  2.75        71
+20  14     0 bedroom  2.75        72
+21  14     0 bedroom  6.00        73
+22  14     0 bedroom  2.75        74
+23  14     0 bedroom  2.75        75
+24  14     0 bedroom  2.75        76
+25  14     0 bedroom  6.00        77
+26  14     0 bedroom  2.75        78
+27  14     0 bedroom  2.75        79
+28  14     0 bedroom  2.75        80
+29  14     0 bedroom  2.75        81
+30  14     0 bedroom  2.75        82
+31  14     0 bedroom  6.00        83
+32  14     0 bedroom  2.75        84
+33  14     0 bedroom  2.75        85
+34  14     0 bedroom  2.75        86
+35  14     0 bedroom  2.75        87
+36  14     0 bedroom  6.00        88
+37  14     0 bedroom  2.75        89
+38  14     0 bedroom  2.75        90
+39  14     0 bedroom  2.75        91
+40  14     0 bedroom  2.75        92
+41  14     0 bedroom  2.75        93
+42  14     0 bedroom  2.75        94
+43  14     0 bedroom  6.00        95
+44  14     0 bedroom  2.75        96
+45  14     0 bedroom  2.75        97
+46  14     0 bedroom  2.75        98
+47  14     0 bedroom  2.75        99
+48  14     0 bedroom  2.75       100
+49  14     0 bedroom  2.75       101
+50  14     0 bedroom  2.75       102
+51  14     0 bedroom  2.75       103
+52  14     0 bedroom  2.75       104
+53  14     0 bedroom  2.75       105
+54  14     0 bedroom  6.00       106
+55  14     0 bedroom  6.00       107
+56  14     0 bedroom  2.75       108
+57  14     0 bedroom  2.75       109
+58  14     0 bedroom  2.75       110
+59  14     0 bedroom  2.75       111
+60  14     0 bedroom  7.00       112
+61  14     0 bedroom  9.00       113
+62  14     0 bedroom  2.75       114
+63  14     0 bedroom  6.00       115
+64  14     0 bedroom  2.75       116
+65  14     0 bedroom  6.00       117
+66  14     0 bedroom  6.00       118
+67  14     0 bedroom  6.00       119
+68  14     0 bedroom  2.75       120
+69  14     0 bedroom  2.75       121
+70  14     0 bedroom  2.75       122
+71  14     0 bedroom  2.75       123
+72  14     0 bedroom  6.00       124
+73  14     0 bedroom  6.00       125
+74  14     0 bedroom  2.75       126
+75  14     0 bedroom  2.75       127
+76  14     0 bedroom  2.75       128
+77  14     0 bedroom  6.00       129
+78  14     0 bedroom  6.00       130
+79  14     0 bedroom  6.00       131
+80  14     0 bedroom  6.00       132
+81  14     0 bedroom  2.75       133
+82  14     0 bedroom  6.00       134
+83  14     0 bedroom  6.00       135
+84  14     0 bedroom  6.00       136
+85  14     0 bedroom  6.00       137
+86  14     0 bedroom  6.00       138
+87  14     0 bedroom  6.00       139
+88  14     0 bedroom  6.00       140
+89  14     0 bedroom  6.00       141
+90  14     0 bedroom  6.00       142
+91  14     0 bedroom  6.00       143
+92  14     0 bedroom  6.00       144
+93  14     0 bedroom  2.75       145
+94  14     0 bedroom  6.00       146
+95  14     0 bedroom  6.00       147
+96  14     0 bedroom  6.00       148
+97  14     0 bedroom  8.00       149
+98  14     0 bedroom  7.00       150
+99  14     0 bedroom 11.00       151
+100 14     0 bedroom  2.75       152
+101 14     0 bedroom  2.75       153
+102 14     0 bedroom  6.00       154
+103 14     0 bedroom  6.00       155
+104 14     0 bedroom  6.00       156
+105 14     0 bedroom  2.75       157
+106 14     0 bedroom  6.00       158
+107 14     0 bedroom  6.00       159
+108 14     0 bedroom  6.00       160
+109 14     0 bedroom  6.00       161
+110 14     0 bedroom  6.00       162
+111 14     0 bedroom  2.75       163
+112 14     0 bedroom  6.00       164
+113 14     0 bedroom 10.00       165
+114 14     0 bedroom  8.00       166
+115 14     0 bedroom 10.00       167
+116 14     0 bedroom  6.00       168
+117 14     0 bedroom  2.75       169
+118 14     0 bedroom  6.00       170
+119 14     0 bedroom  8.00       171
+120 14     0 bedroom  7.00       172
+121 14     0 bedroom  6.00       173
+122 14     0 bedroom  6.00       174
+123 14     0 bedroom  2.75       175
+124 14     0 bedroom  6.00       176
+125 14     0 bedroom  7.00       177
+126 14     0 bedroom  6.00       178
+127 14     0 bedroom  2.75       179
+128 14     0 bedroom  2.75       180
+129 14     0 bedroom  2.75       181
+130 14     0 bedroom  6.00       182
+131 14     0 bedroom  6.00       183
+132 14     0 bedroom 10.00       184
+133 14     0 bedroom  9.00       185
+134 14     0 bedroom  2.75       186
+135 14     0 bedroom  2.75       187
+136 14     0 bedroom  6.00       188
+137 14     0 bedroom  6.00       189
+138 14     0 bedroom  2.75       190
+139 14     0 bedroom  2.75       191
+140 14     0 bedroom  2.75       192
+141 14     0 bedroom  2.75       193
+142 14     0 bedroom  6.00       194
+143 14     0 bedroom  6.00       195
+144 14     0 bedroom  2.75       196
+145 14     0 bedroom  2.75       197
+146 14     0 bedroom  2.75       198
+147 14     0 bedroom  2.75       199
+148 14     0 bedroom  8.00       200
+149 14     0 bedroom  8.00       201
+150 14     0 bedroom 12.00       202
+151 14     0 bedroom  2.75       203
+152 14     0 bedroom  2.75       204
+153 14     0 bedroom  2.75       205
+154 14     0 bedroom  6.00       206
+155 14     0 bedroom  6.00       207
+156 14     0 bedroom  6.00       208
+157 14     0 bedroom  2.75       209
+158 14     0 bedroom  2.75       210
+159 14     0 bedroom  2.75       211
+160 14     0 bedroom  6.00       212
+161 14     0 bedroom  7.00       213
+162 14     0 bedroom  6.00       214
+163 14     0 bedroom  6.00       215
+164 14     0 bedroom  6.00       216
+165 14     0 bedroom  6.00       217
+166 14     0 bedroom  6.00       218
+167 14     0 bedroom  7.00       219
+168 14     0 bedroom  7.00       220
+169 14     0 bedroom 13.00       221
+170 14     0 bedroom 12.00       222
+171 14     0 bedroom  9.00       223
+172 14     0 bedroom 10.00       224
+173 14     0 bedroom  9.00       225
+174 14     0 bedroom  8.00       226
+175 14     0 bedroom  7.00       227
+176 14     0 bedroom  7.00       228
+177 14     0 bedroom  7.00       229
+178 14     0 bedroom  7.00       230
+179 14     0 bedroom  7.00       231
+180 14     0 bedroom  7.00       232
+181 14     0 bedroom  8.00       233
+182 14     0 bedroom  6.00       234
+183 14     0 bedroom  6.00       235
+184 14     0 bedroom  6.00       236
+185 14     0 bedroom  8.00       237
+186 14     0 bedroom  8.00       238
+187 14     0 bedroom  7.00       239
+188 14     0 bedroom  7.00       240
+189 14     0 bedroom  7.00       241
+190 14     0 bedroom  7.00       242
+191 14     0 bedroom  8.00       243
+192 14     0 bedroom  8.00       244
+193 14     0 bedroom  7.00       245
+194 14     0 bedroom  7.00       246
+195 14     0 bedroom  7.00       247
+196 14     0 bedroom  8.00       248
+197 14     0 bedroom  8.00       249
+198 14     0 bedroom  7.00       250
+199 14     0 bedroom  7.00       251
+200 14     0 bedroom  7.00       252
+ [ reached 'max' / getOption("max.print") -- omitted 11745 rows ]
+       id         visit            room               value       
+ Min.   :54   Min.   :0.0000   Length:10944       Min.   :  2.75  
+ 1st Qu.:54   1st Qu.:0.0000   Class :character   1st Qu.:  2.75  
+ Median :54   Median :1.0000   Mode  :character   Median :  2.75  
+ Mean   :54   Mean   :0.9737                      Mean   :  7.08  
+ 3rd Qu.:54   3rd Qu.:2.0000                      3rd Qu.:  9.00  
+ Max.   :54   Max.   :2.0000                      Max.   :271.00  
+   timepoint     
+ Min.   :  42.0  
+ 1st Qu.: 514.0  
+ Median : 970.0  
+ Mean   : 971.7  
+ 3rd Qu.:1426.0  
+ Max.   :1941.0  
+       id         visit          room               value       
+ Min.   :14   Min.   :0.00   Length:11945       Min.   :  2.75  
+ 1st Qu.:14   1st Qu.:0.00   Class :character   1st Qu.:  2.75  
+ Median :14   Median :1.00   Mode  :character   Median :  2.75  
+ Mean   :14   Mean   :1.06                      Mean   : 10.69  
+ 3rd Qu.:14   3rd Qu.:2.00                      3rd Qu.:  7.00  
+ Max.   :14   Max.   :2.00                      Max.   :656.00  
+   timepoint   
+ Min.   :  42  
+ 1st Qu.: 548  
+ Median :1046  
+ Mean   :1054  
+ 3rd Qu.:1544  
+ Max.   :2353  
+      id visit    room value timepoint
+35079 44     0 bedroom    23        94
+35080 44     0 bedroom    23        95
+35081 44     0 bedroom    24        96
+35082 44     0 bedroom    29        97
+35083 44     0 bedroom    26        98
+35084 44     0 bedroom    25        99
+35085 44     0 bedroom    26       100
+35086 44     0 bedroom    27       101
+35087 44     0 bedroom    25       102
+35088 44     0 bedroom    30       103
+35089 44     0 bedroom    30       104
+35090 44     0 bedroom    30       105
+35091 44     0 bedroom    32       106
+35092 44     0 bedroom    30       107
+35093 44     0 bedroom    34       108
+35094 44     0 bedroom    33       109
+35095 44     0 bedroom    33       110
+35096 44     0 bedroom    35       111
+35097 44     0 bedroom    36       112
+35098 44     0 bedroom    34       113
+35099 44     0 bedroom    36       114
+35100 44     0 bedroom    33       115
+35101 44     0 bedroom    40       116
+35102 44     0 bedroom    37       117
+35103 44     0 bedroom    37       118
+35104 44     0 bedroom    38       119
+35105 44     0 bedroom    39       120
+35106 44     0 bedroom    38       121
+35107 44     0 bedroom    39       122
+35108 44     0 bedroom    37       123
+35109 44     0 bedroom    37       124
+35110 44     0 bedroom    38       125
+35111 44     0 bedroom    37       126
+35112 44     0 bedroom    40       127
+35113 44     0 bedroom    39       128
+35114 44     0 bedroom    38       129
+35115 44     0 bedroom    38       130
+35116 44     0 bedroom    39       131
+35117 44     0 bedroom    39       132
+35118 44     0 bedroom    41       133
+35119 44     0 bedroom    40       134
+35120 44     0 bedroom    42       135
+35121 44     0 bedroom    44       136
+35122 44     0 bedroom    49       137
+35123 44     0 bedroom    49       138
+35124 44     0 bedroom    51       139
+35125 44     0 bedroom    53       140
+35126 44     0 bedroom    55       141
+35127 44     0 bedroom    55       142
+35128 44     0 bedroom    60       143
+35129 44     0 bedroom    62       144
+35130 44     0 bedroom    63       145
+35131 44     0 bedroom    66       146
+35132 44     0 bedroom    70       147
+35133 44     0 bedroom    73       148
+35134 44     0 bedroom    74       149
+35135 44     0 bedroom    76       150
+35136 44     0 bedroom    82       151
+35137 44     0 bedroom    87       152
+35138 44     0 bedroom    85       153
+35139 44     0 bedroom    91       154
+35140 44     0 bedroom    93       155
+35141 44     0 bedroom    95       156
+35142 44     0 bedroom    98       157
+35143 44     0 bedroom   104       158
+35144 44     0 bedroom   105       159
+35145 44     0 bedroom   111       160
+35146 44     0 bedroom   115       161
+35147 44     0 bedroom   120       162
+35148 44     0 bedroom   117       163
+35149 44     0 bedroom   123       164
+35150 44     0 bedroom   125       165
+35151 44     0 bedroom   128       166
+35152 44     0 bedroom   129       167
+35153 44     0 bedroom   133       168
+35154 44     0 bedroom   134       169
+35155 44     0 bedroom   135       170
+35156 44     0 bedroom   138       171
+35157 44     0 bedroom   142       172
+35158 44     0 bedroom   146       173
+35159 44     0 bedroom   143       174
+35160 44     0 bedroom   147       175
+35161 44     0 bedroom   147       176
+35162 44     0 bedroom   147       177
+35163 44     0 bedroom   151       178
+35164 44     0 bedroom   157       179
+35165 44     0 bedroom   155       180
+35166 44     0 bedroom   156       181
+35167 44     0 bedroom   155       182
+35168 44     0 bedroom   153       183
+35169 44     0 bedroom   161       184
+35170 44     0 bedroom   166       185
+35171 44     0 bedroom   164       186
+35172 44     0 bedroom   170       187
+35173 44     0 bedroom   189       188
+35174 44     0 bedroom   191       189
+35175 44     0 bedroom   192       190
+35176 44     0 bedroom   197       191
+35177 44     0 bedroom   192       192
+35178 44     0 bedroom   196       193
+35179 44     0 bedroom   195       194
+35180 44     0 bedroom   195       195
+35181 44     0 bedroom   191       196
+35182 44     0 bedroom   191       197
+35183 44     0 bedroom   193       198
+35184 44     0 bedroom   196       199
+35185 44     0 bedroom   198       200
+35186 44     0 bedroom   200       201
+35187 44     0 bedroom   202       202
+35188 44     0 bedroom   197       203
+35189 44     0 bedroom   198       204
+35190 44     0 bedroom   196       205
+35191 44     0 bedroom   194       206
+35192 44     0 bedroom   197       207
+35193 44     0 bedroom   197       208
+35194 44     0 bedroom   197       209
+35195 44     0 bedroom   201       210
+35196 44     0 bedroom   201       211
+35197 44     0 bedroom   213       212
+35198 44     0 bedroom   202       213
+35199 44     0 bedroom   205       214
+35200 44     0 bedroom   210       215
+35201 44     0 bedroom   209       216
+35202 44     0 bedroom   212       217
+35203 44     0 bedroom   206       218
+35204 44     0 bedroom   211       219
+35205 44     0 bedroom   209       220
+35206 44     0 bedroom   210       221
+35207 44     0 bedroom   212       222
+35208 44     0 bedroom   210       223
+35209 44     0 bedroom   209       224
+35210 44     0 bedroom   210       225
+35211 44     0 bedroom   213       226
+35212 44     0 bedroom   212       227
+35213 44     0 bedroom   208       228
+35214 44     0 bedroom   207       229
+35215 44     0 bedroom   207       230
+35216 44     0 bedroom   210       231
+35217 44     0 bedroom   207       232
+35218 44     0 bedroom   207       233
+35219 44     0 bedroom   209       234
+35220 44     0 bedroom   205       235
+35221 44     0 bedroom   201       236
+35222 44     0 bedroom   208       237
+35223 44     0 bedroom   202       238
+35224 44     0 bedroom   201       239
+35225 44     0 bedroom   202       240
+35226 44     0 bedroom   194       241
+35227 44     0 bedroom   199       242
+35228 44     0 bedroom   190       243
+35229 44     0 bedroom   191       244
+35230 44     0 bedroom   191       245
+35231 44     0 bedroom   186       246
+35232 44     0 bedroom   181       247
+35233 44     0 bedroom   173       248
+35234 44     0 bedroom   176       249
+35235 44     0 bedroom   174       250
+35236 44     0 bedroom   169       251
+35237 44     0 bedroom   166       252
+35238 44     0 bedroom   165       253
+35239 44     0 bedroom   162       254
+35240 44     0 bedroom   165       255
+35241 44     0 bedroom   160       256
+35242 44     0 bedroom   155       257
+35243 44     0 bedroom   153       258
+35244 44     0 bedroom   152       259
+35245 44     0 bedroom   153       260
+35246 44     0 bedroom   150       261
+35247 44     0 bedroom   147       262
+35248 44     0 bedroom   148       263
+35249 44     0 bedroom   148       264
+35250 44     0 bedroom   147       265
+35251 44     0 bedroom   147       266
+35252 44     0 bedroom   146       267
+35253 44     0 bedroom   141       268
+35254 44     0 bedroom   140       269
+35255 44     0 bedroom   136       270
+35256 44     0 bedroom   137       271
+35257 44     0 bedroom   137       272
+35258 44     0 bedroom   129       273
+35259 44     0 bedroom   130       274
+35260 44     0 bedroom   128       275
+35261 44     0 bedroom   128       276
+35262 44     0 bedroom   127       277
+35263 44     0 bedroom   125       278
+35264 44     0 bedroom   124       279
+35265 44     0 bedroom   132       280
+35266 44     0 bedroom   127       281
+35267 44     0 bedroom   127       282
+35268 44     0 bedroom   119       283
+35269 44     0 bedroom   118       284
+35270 44     0 bedroom   115       285
+35271 44     0 bedroom   113       286
+35272 44     0 bedroom   114       287
+35273 44     0 bedroom   115       288
+35274 44     0 bedroom   115       289
+35275 44     0 bedroom   112       290
+35276 44     0 bedroom   114       291
+35277 44     0 bedroom   110       292
+35278 44     0 bedroom   109       293
+ [ reached 'max' / getOption("max.print") -- omitted 1672 rows ]
+       id         visit       room               value      
+ Min.   :44   Min.   :0   Length:1872        Min.   :  8.0  
+ 1st Qu.:44   1st Qu.:0   Class :character   1st Qu.: 30.0  
+ Median :44   Median :0   Mode  :character   Median : 51.0  
+ Mean   :44   Mean   :0                      Mean   : 88.8  
+ 3rd Qu.:44   3rd Qu.:0                      3rd Qu.: 80.0  
+ Max.   :44   Max.   :0                      Max.   :911.0  
+   timepoint     
+ Min.   :  94.0  
+ 1st Qu.: 561.8  
+ Median :1029.5  
+ Mean   :1029.5  
+ 3rd Qu.:1497.2  
+ Max.   :1965.0  
+       id         visit       room               value        
+ Min.   :44   Min.   :1   Length:1872        Min.   :   2.75  
+ 1st Qu.:44   1st Qu.:1   Class :character   1st Qu.:  14.00  
+ Median :44   Median :1   Mode  :character   Median :  24.00  
+ Mean   :44   Mean   :1                      Mean   :  41.37  
+ 3rd Qu.:44   3rd Qu.:1                      3rd Qu.:  37.00  
+ Max.   :44   Max.   :1                      Max.   :1607.00  
+   timepoint     
+ Min.   : 107.0  
+ 1st Qu.: 574.8  
+ Median :1042.5  
+ Mean   :1042.5  
+ 3rd Qu.:1510.2  
+ Max.   :1978.0  

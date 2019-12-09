@@ -50,9 +50,10 @@ setMethod("subject",
             if ( n %in% x$id){
             x[x$id == n, ]
             } else {
-              print("Subject not in data")
+              print("NULL")
             }
           })
+
 
 
 # visit: a generic function for extracting visit-specific information

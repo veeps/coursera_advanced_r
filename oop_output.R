@@ -16,7 +16,7 @@ print(x)
 out <- subject(x, 10)
 print(out)
 
-out <- subject(x, 14)
+out <- subject(x, 14)  
 print(out)
 
 out <- subject(x, 54) %>% summary

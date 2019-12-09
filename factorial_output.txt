@@ -1,5 +1,8 @@
-Summary of performance for each factorial function              expr min lq   mean median uq   max neval
-1   Factorial_loop  27 29 179.11   30.5 33 13658   100
-2 Factorial_reduce  31 43  51.56   44.0 45   792   100
-3   Factorial_func  29 31 100.84   32.0 33  6795   100
-4    Factorial_mem  31 34  43.19   35.0 37   761   100
+Summary of performance for each factorial function 
+ 
+              expr min lq   mean median   uq  max neval
+1   Factorial_loop  37 39  53.46   42.0 51.0  669   100
+2 Factorial_reduce  42 44  76.41   45.0 49.0 2050   100
+3   Factorial_func  37 39  54.66   40.0 47.5  942   100
+4    Factorial_mem  43 56 167.21   59.5 65.0 9519   100
+Plot speed for the various functions, taking the factorial of 1:100
